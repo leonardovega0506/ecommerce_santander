@@ -5,12 +5,11 @@
 	<parent>
 		<groupId>com.minsait.ecommerce</groupId>
 		<artifactId>ecommerce</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.minsait.ecommerce</groupId>
-	<artifactId>domain</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+    <artifactId>domain</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
 	<name>domain</name>
 	<description>Demo project for Spring Boot</description>
 	    <properties>
@@ -28,6 +27,10 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
         </dependency>
 
     </dependencies>

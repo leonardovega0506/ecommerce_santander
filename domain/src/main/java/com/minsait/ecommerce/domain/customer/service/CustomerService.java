@@ -2,6 +2,7 @@ package com.minsait.ecommerce.domain.customer.service;
 
 import java.util.List;
 
+import com.minsait.ecommerce.domain.customer.model.dto.command.CustomerCreateCommand;
 import com.minsait.ecommerce.domain.customer.model.entity.CustomerEntity;
 import com.minsait.ecommerce.domain.customer.port.dao.ICustomerDAO;
 import com.minsait.ecommerce.domain.customer.port.repository.ICustomerRepository;
@@ -26,5 +27,9 @@ public class CustomerService {
         return customerRepository.create(body);
     }
 
+    public CustomerEntity execute(CustomerCreateCommand clienteCreateCommand){
+        CustomerEntity clienteToCreate = new CustomerEntity().requestToCreate(clienteCreateCommand);
+        return customerRepository.create(clienteToCreate);
+    }
 
 }

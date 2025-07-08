@@ -1,9 +1,13 @@
 package com.minsait.ecommerce.application.customer.mapper;
 
+import com.minsait.ecommerce.domain.customer.model.dto.CustomerDTO;
+import com.minsait.ecommerce.domain.customer.model.entity.CustomerEntity;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.Mapping;
 
-import com.minsait.ecommerce.customer.CustomerDTO;
+
+
 
 @Mapper
 @Component
