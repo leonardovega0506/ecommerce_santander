@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @RequiredArgsConstructor
 @AllArgsConstructor
-public class ProductException {
+public class ProductException extends RuntimeException{
 
     private String errorMessage;
 }

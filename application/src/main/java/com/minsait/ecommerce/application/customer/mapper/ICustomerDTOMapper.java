@@ -1,16 +1,14 @@
 package com.minsait.ecommerce.application.customer.mapper;
 
 import com.minsait.ecommerce.domain.customer.model.dto.CustomerDTO;
-import com.minsait.ecommerce.domain.customer.model.entity.CustomerEntity;
+import com.minsait.ecommerce.domain.customer.model.entity.CustomerModel;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.springframework.stereotype.Component;
 
 
 
 
-@Mapper
-@Component
+@Mapper(componentModel = "spring")
 public interface ICustomerDTOMapper {
 
     @Mapping(source = "id",target = "id")
@@ -18,6 +16,6 @@ public interface ICustomerDTOMapper {
     @Mapping(source = "lastName",target = "lastName")
     @Mapping(source = "email",target = "email")
     @Mapping(source = "phone",target = "phone")
-    @Mapping(source = "address",target = "addres")
-    CustomerDTO toDto(CustomerEntity domain);
+    @Mapping(source = "address",target = "address")
+    CustomerDTO toDTO(CustomerModel domain);
 }

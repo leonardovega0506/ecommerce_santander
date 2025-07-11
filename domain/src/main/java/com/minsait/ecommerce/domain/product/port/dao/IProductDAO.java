@@ -2,11 +2,11 @@ package com.minsait.ecommerce.domain.product.port.dao;
 
 import java.util.List;
 
-import com.minsait.ecommerce.domain.product.model.entity.ProductEntity;
+import com.minsait.ecommerce.domain.product.model.entity.ProductModel;
 
 public interface IProductDAO {
 
-    ProductEntity findById(Long id);
-    List<ProductEntity> findAll();
+    ProductModel findById(Long id);
+    List<ProductModel> findAll();
 
 }

@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @RequiredArgsConstructor
 @AllArgsConstructor
-public class CustomerException {
+public class CustomerException extends RuntimeException{
 
     private String errorMessage;
 }
